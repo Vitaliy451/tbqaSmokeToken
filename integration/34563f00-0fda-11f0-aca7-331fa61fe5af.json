@@ -1,0 +1,56 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : null,
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "topicFilters" : [ {
+        "qos" : 0,
+        "filter" : "#"
+      } ],
+      "clientConfiguration" : {
+        "ssl" : false,
+        "host" : "9090",
+        "port" : 1883,
+        "clientId" : "",
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "cleanSession" : true,
+        "protocolVersion" : "MQTT_3_1",
+        "retainedMessage" : false,
+        "connectTimeoutSec" : 10,
+        "maxBytesInMessage" : 32368
+      },
+      "downlinkTopicPattern" : "${topic}"
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1743609930384,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "34131b80-0fda-11f0-aca7-331fa61fe5af"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : true,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "34563f00-0fda-11f0-aca7-331fa61fe5af"
+    },
+    "name" : "MQTT integration",
+    "remote" : false,
+    "routingKey" : "0f9fb73f-e6ed-eabd-bdbb-0f1a50881225",
+    "secret" : "gsif2noebo7y7zuoi2be",
+    "type" : "MQTT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

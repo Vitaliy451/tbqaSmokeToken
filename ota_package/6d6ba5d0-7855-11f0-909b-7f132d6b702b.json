@@ -1,0 +1,30 @@
+{
+  "entityType" : "OTA_PACKAGE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""
+    },
+    "checksum" : "d327c0dbc1e91e74cea50f1d0fa48ab35af53e43467d99d7390193c034559869",
+    "checksumAlgorithm" : "SHA256",
+    "contentType" : "application/json",
+    "data" : "ewogICJ0aGluZ3Nib2FyZEFwaUVuZHBvaW50IjogImh0dHBzOi8vcGUudGJxYS5jbG91ZCIsCiAgImFwcExpbmtzVXJsSG9zdCI6ICJwZS50YnFhLmNsb3VkIiwKICAiYXBwTGlua3NVcmxTY2hlbWUiOiAiaHR0cHMiLAogICJyZWdpc3RyYXRpb25SZWRpcmVjdFVybFNjaGVtZSI6ICJ0YnNjaGVtZSIsCiAgInJlZ2lzdHJhdGlvblJlZGlyZWN0VXJsSG9zdCI6ICJhcHAucGUudGhpbmdzYm9hcmQub3JnIiwKICAiYW5kcm9pZEFwcGxpY2F0aW9uSWQiOiAibXkuYW5kcm9pZC5hcHBsaWNhdGlvbiIsCiAgImFuZHJvaWRBcHBsaWNhdGlvbk5hbWUiOiAicGVUQiIsCiAgInRoaW5nc2JvYXJkT0F1dGgyQ2FsbGJhY2tVcmxTY2hlbWUiOiAibXkuYW5kcm9pZC5hcHBsaWNhdGlvbi5hdXRoIiwKICAidGhpbmdzYm9hcmRBbmRyb2lkQXBwU2VjcmV0IjogIlNqQnBVRFJ1Tm01VFQwWTRZM0ZuU0U5WWVtbDVOR0pCT0hobGNIZ3hNMWhvWW1GdlNuYzNZWEZwZUVoSVJuQnJjMG95ZDFFMlNWaFdSR0ZrWVU1c1pRPT0iLAogICJpb3NBcHBsaWNhdGlvbklkIjogIm15Lmlvcy5hcHBsaWNhdGlvbiIsCiAgImlvc0FwcGxpY2F0aW9uTmFtZSI6ICJwZVRCIiwKICAidGhpbmdzYm9hcmRJb3NBcHBTZWNyZXQiOiAiWVZKaWQzZEdkMXA1Wkd4RlRsQkpPVTVIUmsxV1VGcEtlWHB5TmtveE4wOTFOVmxtYld0dmVuWklRbkZ1YVZJeFdqSXpXRTVtVHpBMVRXczBkSGw1Umc9PSIKfQ==",
+    "dataSize" : 712,
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "ebc64170-7854-11f0-bca2-9f03ec3ae0ed"
+    },
+    "externalId" : null,
+    "fileName" : "configs.json",
+    "hasData" : true,
+    "id" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "6d6ba5d0-7855-11f0-909b-7f132d6b702b"
+    },
+    "name" : "OTA firmware",
+    "tag" : "OTA firmware v1.2",
+    "title" : "OTA firmware",
+    "type" : "FIRMWARE",
+    "url" : null,
+    "version" : "v1.2"
+  }
+}

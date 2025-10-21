@@ -1,0 +1,30 @@
+{
+  "entityType" : "OTA_PACKAGE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\""
+    },
+    "checksum" : "f5893f393da35d1a1ccb6be5362d4dcd1d0ca232587f2ce20ba09d2ad614804d",
+    "checksumAlgorithm" : "SHA256",
+    "contentType" : "application/json",
+    "data" : "ewogICJuYW1lIjogIkRldlByb2YiLAogICJkZXNjcmlwdGlvbiI6ICIiLAogICJpbWFnZSI6IG51bGwsCiAgInR5cGUiOiAiREVGQVVMVCIsCiAgInRyYW5zcG9ydFR5cGUiOiAiTFdNMk0iLAogICJwcm92aXNpb25UeXBlIjogIkRJU0FCTEVEIiwKICAiZGVmYXVsdFJ1bGVDaGFpbklkIjogbnVsbCwKICAiZGVmYXVsdERhc2hib2FyZElkIjogbnVsbCwKICAiZGVmYXVsdFF1ZXVlTmFtZSI6IG51bGwsCiAgInByb3Zpc2lvbkRldmljZUtleSI6IG51bGwsCiAgImZpcm13YXJlSWQiOiBudWxsLAogICJzb2Z0d2FyZUlkIjogbnVsbCwKICAiZGVmYXVsdEVkZ2VSdWxlQ2hhaW5JZCI6IG51bGwsCiAgImRlZmF1bHQiOiBmYWxzZSwKICAicHJvZmlsZURhdGEiOiB7CiAgICAiY29uZmlndXJhdGlvbiI6IHsKICAgICAgInR5cGUiOiAiREVGQVVMVCIKICAgIH0sCiAgICAidHJhbnNwb3J0Q29uZmlndXJhdGlvbiI6IHsKICAgICAgInR5cGUiOiAiTFdNMk0iLAogICAgICAib2JzZXJ2ZUF0dHIiOiB7CiAgICAgICAgImtleU5hbWUiOiB7CiAgICAgICAgICAiLzI1XzIuMC8wLzAiOiAiZGV2aWNlSWQiLAogICAgICAgICAgIi8yNV8yLjAvMC8xIjogInByZWZpeCIsCiAgICAgICAgICAiLzI1XzIuMC8wLzMiOiAiaW90RGV2aWNlT2JqZWN0cyIKICAgICAgICB9LAogICAgICAgICJvYnNlcnZlIjogW10sCiAgICAgICAgImF0dHJpYnV0ZSI6IFsKICAgICAgICAgICIvMjVfMi4wLzAvMCIsCiAgICAgICAgICAiLzI1XzIuMC8wLzEiCiAgICAgICAgXSwKICAgICAgICAidGVsZW1ldHJ5IjogWwogICAgICAgICAgIi8yNV8yLjAvMC8zIgogICAgICAgIF0sCiAgICAgICAgImF0dHJpYnV0ZUx3bTJtIjoge30sCiAgICAgICAgIm9ic2VydmVTdHJhdGVneSI6ICJTSU5HTEUiCiAgICAgIH0sCiAgICAgICJib290c3RyYXBTZXJ2ZXJVcGRhdGVFbmFibGUiOiB0cnVlLAogICAgICAiYm9vdHN0cmFwIjogWwogICAgICAgIHsKICAgICAgICAgICJzZWN1cml0eU1vZGUiOiAiTk9fU0VDIiwKICAgICAgICAgICJzaG9ydFNlcnZlcklkIjogMTIzLAogICAgICAgICAgImJvb3RzdHJhcFNlcnZlcklzIjogZmFsc2UsCiAgICAgICAgICAiaG9zdCI6ICIwLjAuMC4wIiwKICAgICAgICAgICJwb3J0IjogNTY4NSwKICAgICAgICAgICJjbGllbnRIb2xkT2ZmVGltZSI6IDEsCiAgICAgICAgICAic2VydmVyUHVibGljS2V5IjogIiIsCiAgICAgICAgICAic2VydmVyQ2VydGlmaWNhdGUiOiAiIiwKICAgICAgICAgICJib290c3RyYXBTZXJ2ZXJBY2NvdW50VGltZW91dCI6IDAsCiAgICAgICAgICAibGlmZXRpbWUiOiAzMDAsCiAgICAgICAgICAiZGVmYXVsdE1pblBlcmlvZCI6IDEsCiAgICAgICAgICAibm90aWZJZkRpc2FibGVkIjogdHJ1ZSwKICAgICAgICAgICJiaW5kaW5nIjogIlUiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAic2VjdXJpdHlNb2RlIjogIk5PX1NFQyIsCiAgICAgICAgICAic2hvcnRTZXJ2ZXJJZCI6IDEyMzMsCiAgICAgICAgICAiYm9vdHN0cmFwU2VydmVySXMiOiBmYWxzZSwKICAgICAgICAgICJob3N0IjogIjAuMC4wLjEiLAogICAgICAgICAgInBvcnQiOiA1Njg1LAogICAgICAgICAgImNsaWVudEhvbGRPZmZUaW1lIjogMSwKICAgICAgICAgICJzZXJ2ZXJQdWJsaWNLZXkiOiAiIiwKICAgICAgICAgICJzZXJ2ZXJDZXJ0aWZpY2F0ZSI6IG51bGwsCiAgICAgICAgICAiYm9vdHN0cmFwU2VydmVyQWNjb3VudFRpbWVvdXQiOiAwLAogICAgICAgICAgImxpZmV0aW1lIjogMzAwLAogICAgICAgICAgImRlZmF1bHRNaW5QZXJpb2QiOiAxLAogICAgICAgICAgIm5vdGlmSWZEaXNhYmxlZCI6IHRydWUsCiAgICAgICAgICAiYmluZGluZyI6ICJVIgogICAgICAgIH0KICAgICAgXSwKICAgICAgImNsaWVudEx3TTJtU2V0dGluZ3MiOiB7CiAgICAgICAgInVzZU9iamVjdDE5Rm9yT3RhSW5mbyI6IGZhbHNlLAogICAgICAgICJmd1VwZGF0ZVN0cmF0ZWd5IjogMSwKICAgICAgICAic3dVcGRhdGVTdHJhdGVneSI6IDEsCiAgICAgICAgImNsaWVudE9ubHlPYnNlcnZlQWZ0ZXJDb25uZWN0IjogMSwKICAgICAgICAicG93ZXJNb2RlIjogIkRSWCIsCiAgICAgICAgInBzbUFjdGl2aXR5VGltZXIiOiAxMDAwMCwKICAgICAgICAiZWRyeEN5Y2xlIjogODEwMDAsCiAgICAgICAgInBhZ2luZ1RyYW5zbWlzc2lvbldpbmRvdyI6IDEwMDAwLAogICAgICAgICJmd1VwZGF0ZVJlc291cmNlIjogbnVsbCwKICAgICAgICAic3dVcGRhdGVSZXNvdXJjZSI6IG51bGwsCiAgICAgICAgImRlZmF1bHRPYmplY3RJRFZlciI6ICIxLjAiCiAgICAgIH0KICAgIH0sCiAgICAicHJvdmlzaW9uQ29uZmlndXJhdGlvbiI6IHsKICAgICAgInR5cGUiOiAiRElTQUJMRUQiLAogICAgICAicHJvdmlzaW9uRGV2aWNlU2VjcmV0IjogbnVsbAogICAgfSwKICAgICJhbGFybXMiOiBudWxsCiAgfQp9",
+    "dataSize" : 2421,
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "f81ad760-7854-11f0-909b-7f132d6b702b"
+    },
+    "externalId" : null,
+    "fileName" : "devprof.json",
+    "hasData" : true,
+    "id" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "48401d40-7855-11f0-909b-7f132d6b702b"
+    },
+    "name" : "OTA software",
+    "tag" : "OTA software v1.1",
+    "title" : "OTA software",
+    "type" : "SOFTWARE",
+    "url" : null,
+    "version" : "v1.1"
+  }
+}

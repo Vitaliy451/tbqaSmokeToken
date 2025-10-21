@@ -1,0 +1,42 @@
+{
+  "entityType" : "SCHEDULER_EVENT",
+  "entity" : {
+    "additionalInfo" : null,
+    "configuration" : {
+      "reportTemplateId" : {
+        "entityType" : "REPORT_TEMPLATE",
+        "id" : "cfd0f310-6946-11f0-87a5-b37aa8585ace"
+      },
+      "timezone" : "Europe/Kiev",
+      "userId" : {
+        "entityType" : "USER",
+        "id" : "1495c070-fdae-11ef-bca0-9d823f5ae12e"
+      },
+      "targets" : [ ],
+      "notificationTemplateId" : null,
+      "msgBody" : {
+        "reportConfig" : {
+          "userId" : "1495c070-fdae-11ef-bca0-9d823f5ae12e"
+        }
+      }
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "SCHEDULER_EVENT",
+      "id" : "eba1f660-6947-11f0-87a5-b37aa8585ace"
+    },
+    "name" : "e5yhe",
+    "originatorId" : null,
+    "ownerId" : null,
+    "schedule" : {
+      "timezone" : "Europe/Kiev",
+      "startTime" : 1753390800000
+    },
+    "type" : "generateDashboardReport"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "SLACK",
+      "conversation" : {
+        "email" : null,
+        "id" : "C05BZ4VKHDF",
+        "name" : "testproject",
+        "type" : "PUBLIC_CHANNEL",
+        "wholeName" : "testproject",
+        "title" : "testproject"
+      },
+      "conversationType" : "PUBLIC_CHANNEL",
+      "description" : "tbqa test"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "76be58f0-535f-11f0-86e5-f1b3d2296ca6"
+    },
+    "name" : "Slack users"
+  }
+}

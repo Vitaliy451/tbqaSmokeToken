@@ -1,0 +1,25 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "ZXhwb3J0IGNvbnN0IHZhbHVlID0gJ3RlbmFudCBtb2R1bGUnOw==",
+    "descriptor" : null,
+    "etag" : "c98d852c8e312910766434b3c070fd25cbcb222f66e8550dcc0131230abe76f2",
+    "externalId" : null,
+    "fileName" : "Tenant module.js",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "e25ded50-7754-11f0-be54-15f6d456b010"
+    },
+    "link" : "/api/resource/js_module/tenant/Tenant module.js",
+    "name" : "Tenant Module",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "Tenant module.js",
+    "resourceSubType" : "MODULE",
+    "resourceType" : "JS_MODULE",
+    "title" : "Tenant Module"
+  }
+}

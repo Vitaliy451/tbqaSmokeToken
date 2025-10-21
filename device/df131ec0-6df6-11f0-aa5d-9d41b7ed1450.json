@@ -1,0 +1,63 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : { },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "59c875d0-6d56-11f0-aa5d-9d41b7ed1450"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "df131ec0-6df6-11f0-aa5d-9d41b7ed1450"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "df131ec0-6df6-11f0-aa5d-9d41b7ed1450"
+    },
+    "label" : null,
+    "name" : "500150266  ",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "NEPTUNE-360"
+  },
+  "credentials" : {
+    "credentialsId" : "n8AZCUNSmnujTMxKfDNU",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1753957378163,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1753957378156,
+      "longValue" : 1753957378153,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

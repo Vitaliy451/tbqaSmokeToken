@@ -1,0 +1,160 @@
+{
+  "entityType" : "REPORT_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "format" : "PDF",
+      "components" : [ {
+        "background" : null,
+        "borderColor" : null,
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "dataSources" : [ {
+          "alarmFilterConfig" : {
+            "assigneeId" : null,
+            "searchPropagatedAlarms" : false,
+            "severityList" : null,
+            "statusList" : [ "ACTIVE" ],
+            "typeList" : null
+          },
+          "dataKeys" : [ {
+            "aggregationType" : null,
+            "color" : null,
+            "decimals" : 0,
+            "label" : "Temperature",
+            "name" : "temperature",
+            "postFuncBody" : "if (value==null) {\n    return \"N/A\";\n} else {\n    return value;\n}",
+            "settings" : null,
+            "timewindow" : null,
+            "type" : "timeseries",
+            "units" : "°C",
+            "usePostProcessing" : true
+          }, {
+            "aggregationType" : null,
+            "color" : "#4caf50",
+            "decimals" : 0,
+            "label" : "humidity",
+            "name" : "humidity",
+            "postFuncBody" : "if (value==null) {\n    return \"N/A\";\n} else {\n    return value;\n}",
+            "settings" : {
+              "cell" : null,
+              "columnWidth" : null,
+              "header" : null,
+              "type" : "COLUMN"
+            },
+            "timewindow" : null,
+            "type" : "timeseries",
+            "units" : null,
+            "usePostProcessing" : true
+          } ],
+          "deviceId" : null,
+          "entityAliasId" : "6b803420-5db2-b08f-8bc6-b226afeb4aca",
+          "filterId" : null,
+          "latestDataKeys" : [ ],
+          "type" : "entity"
+        } ],
+        "margins" : {
+          "bottom" : 0,
+          "left" : 0,
+          "right" : 0,
+          "top" : 20
+        },
+        "paddings" : null,
+        "showTableHeading" : true,
+        "showTimestamp" : true,
+        "subType" : null,
+        "tableHeading" : {
+          "color" : "#000",
+          "font" : {
+            "family" : "Roboto",
+            "size" : 20.0,
+            "style" : "normal",
+            "weight" : "normal"
+          },
+          "height" : 40,
+          "text" : "${entityName}",
+          "textAlignment" : "center",
+          "verticalAlignment" : "middle"
+        },
+        "tableSortOrder" : {
+          "column" : "Timestamp",
+          "direction" : "DESC"
+        },
+        "timestampColumnSettings" : {
+          "cell" : null,
+          "columnWidth" : null,
+          "header" : null,
+          "type" : "COLUMN"
+        },
+        "timestampLabel" : "Timestamp",
+        "timestampPattern" : "yyyy-MM-dd HH:mm:ss",
+        "timewindow" : {
+          "aggregation" : {
+            "limit" : 200,
+            "type" : "NONE"
+          },
+          "history" : {
+            "historyType" : 0,
+            "interval" : 1000,
+            "quickInterval" : "CURRENT_DAY",
+            "timewindowMs" : 2592000000
+          },
+          "timezone" : null
+        },
+        "type" : "TIME_SERIES_TABLE"
+      } ],
+      "entityAliases" : [ {
+        "alias" : "se",
+        "filter" : {
+          "type" : "entityType",
+          "entityType" : "DEVICE"
+        },
+        "id" : "6b803420-5db2-b08f-8bc6-b226afeb4aca"
+      } ],
+      "filters" : [ ],
+      "footer" : {
+        "components" : [ ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "format" : "PDF",
+      "header" : {
+        "components" : [ ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
+      "pageBackground" : "#fff",
+      "pageMargins" : {
+        "bottom" : 20,
+        "left" : 20,
+        "right" : 20,
+        "top" : 20
+      },
+      "pageOrientation" : "PORTRAIT",
+      "pageSize" : "A4",
+      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "description" : null,
+    "externalId" : null,
+    "format" : "PDF",
+    "id" : {
+      "entityType" : "REPORT_TEMPLATE",
+      "id" : "b91e36e0-a83a-11f0-86d8-81e4c060fe10"
+    },
+    "name" : "erd",
+    "ownerId" : null,
+    "type" : "REPORT"
+  }
+}

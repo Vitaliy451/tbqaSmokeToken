@@ -1,0 +1,33 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "1440c2a0-fdae-11ef-bca0-9d823f5ae12e"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4a6f3690-76c6-11f0-9589-4be6f5cf4067"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "666a0c10-a445-11f0-b037-d99c66e73af6"
+    },
+    "label" : null,
+    "name" : "нргорл",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4a6f3690-76c6-11f0-9589-4be6f5cf4067"
+    },
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

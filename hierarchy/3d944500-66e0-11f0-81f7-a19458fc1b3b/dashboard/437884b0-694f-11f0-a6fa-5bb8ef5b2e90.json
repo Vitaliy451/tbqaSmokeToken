@@ -1,0 +1,321 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "jkl",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "e146a1bb-e6dd-7c4c-28cc-43ca89eb720b" : {
+          "typeFullFqn" : "system.mobile_app_qr_code",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 4,
+          "config" : {
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useSystemSettings" : true,
+              "qrCodeConfig" : {
+                "badgeEnabled" : true,
+                "badgePosition" : "RIGHT",
+                "qrCodeLabelEnabled" : true,
+                "qrCodeLabel" : "Scan to connect or download mobile app"
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Download mobile app",
+            "dropShadow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableFullscreen" : false,
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "configMode" : "basic",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "1.5"
+            },
+            "titleColor" : "#000000",
+            "iconSize" : "26px",
+            "titleIcon" : "qr_code",
+            "iconColor" : "#000000",
+            "actions" : { },
+            "enableDataExport" : false,
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e146a1bb-e6dd-7c4c-28cc-43ca89eb720b"
+        },
+        "0c6840cd-90ff-2c6d-dffd-0ac64e1ad8c7" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1754830054345,
+                  "endTimeMs" : 1754916454345
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "autoScale" : true,
+                "showLabel" : true,
+                "label" : "Button",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "2ccab808-2c7d-89d6-cc92-daa5c853fe50",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "mobileAction" : {
+                  "type" : "scanQrCode",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Scan QR code action was canceled!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to scan QR code', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "processQrCodeFunction" : "// Function body to process result of QR code scanning. \n// - code - scanned QR code\n// - format - scanned QR code format\n\nshowQrCodeDialog('QR Code', code, format);\n\nfunction showQrCodeDialog(title, code, format) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, 'Code: ['+code+']<br>Format: ' + format).subscribe();\n    }, 100);\n}\n"
+                },
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "0c6840cd-90ff-2c6d-dffd-0ac64e1ad8c7"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "jkl",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "e146a1bb-e6dd-7c4c-28cc-43ca89eb720b" : {
+                  "sizeX" : 7,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "0c6840cd-90ff-2c6d-dffd-0ac64e1ad8c7" : {
+                  "sizeX" : 3,
+                  "sizeY" : 1,
+                  "row" : 4,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : { },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1754830037759,
+            "endTimeMs" : 1754916437759
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "name" : "jkl",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3d944500-66e0-11f0-81f7-a19458fc1b3b"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "437884b0-694f-11f0-a6fa-5bb8ef5b2e90"
+    },
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3d944500-66e0-11f0-81f7-a19458fc1b3b"
+    }
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

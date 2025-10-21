@@ -1,0 +1,58 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "topicFilters" : [ {
+        "qos" : 0,
+        "filter" : "#"
+      } ],
+      "clientConfiguration" : {
+        "ssl" : false,
+        "host" : "thingsboard.cloud",
+        "port" : 1883,
+        "clientId" : "",
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "cleanSession" : false,
+        "protocolVersion" : "MQTT_3_1",
+        "retainedMessage" : false,
+        "connectTimeoutSec" : 10,
+        "maxBytesInMessage" : 32368
+      },
+      "downlinkTopicPattern" : "${topic}"
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742555173523,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "680c7360-0642-11f0-935e-abb9314f9acd"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "6841db40-0642-11f0-935e-abb9314f9acd"
+    },
+    "name" : "MQTT remote integration",
+    "remote" : true,
+    "routingKey" : "3cae9e27-63ed-d6c7-7b86-de909355993d",
+    "secret" : "v2uetcttzws126h3s9nk",
+    "type" : "MQTT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

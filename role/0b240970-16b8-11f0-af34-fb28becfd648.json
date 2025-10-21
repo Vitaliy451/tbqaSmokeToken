@@ -1,0 +1,30 @@
+{
+  "entityType" : "ROLE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "name" : "dashboard create",
+    "permissions" : {
+      "WIDGETS_BUNDLE" : [ "ALL" ],
+      "WIDGET_TYPE" : [ "ALL" ],
+      "DASHBOARD" : [ "WRITE", "WRITE_ATTRIBUTES", "WRITE_TELEMETRY" ],
+      "DASHBOARD_GROUP" : [ "ADD_TO_GROUP", "READ" ]
+    },
+    "type" : "GENERIC",
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "id" : {
+      "entityType" : "ROLE",
+      "id" : "0b240970-16b8-11f0-af34-fb28becfd648"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

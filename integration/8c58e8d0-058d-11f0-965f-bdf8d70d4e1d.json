@@ -1,0 +1,90 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "topicFilters" : [ {
+        "qos" : 0,
+        "filter" : "tb/mqtt-integration-tutorial/sensors/+/temperature"
+      }, {
+        "qos" : 0,
+        "filter" : "tb/mqtt-integration-tutorial/sensors/+/rx/response"
+      } ],
+      "clientConfiguration" : {
+        "ssl" : false,
+        "host" : "broker.emqx.io",
+        "port" : 1883,
+        "clientId" : "",
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "cleanSession" : false,
+        "protocolVersion" : "MQTT_3_1",
+        "retainedMessage" : false,
+        "connectTimeoutSec" : 10,
+        "maxBytesInMessage" : 32368
+      },
+      "downlinkTopicPattern" : "${topic}"
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742481443420,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "e3e4a190-058b-11f0-b337-c97ab0900455"
+    },
+    "downlinkConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "4ae8daa0-058c-11f0-b337-c97ab0900455"
+    },
+    "edgeTemplate" : false,
+    "enabled" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "8c58e8d0-058d-11f0-965f-bdf8d70d4e1d"
+    },
+    "name" : "MQTT integration",
+    "remote" : false,
+    "routingKey" : "0346d395-f3f8-74fa-e7b1-ec46f9249487",
+    "secret" : "6ep1gpw9ybxnnu6s678u",
+    "type" : "MQTT"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "8c58e8d0-058d-11f0-965f-bdf8d70d4e1d"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "b73177a0-058f-11f0-b654-010dad7d78ad"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 268285
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "8c58e8d0-058d-11f0-965f-bdf8d70d4e1d"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "ba2f7890-0593-11f0-b654-010dad7d78ad"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 268287
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

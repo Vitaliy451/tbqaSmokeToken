@@ -1,0 +1,135 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e7373e30-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "e6d34c40-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "e95933d0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "e95933d0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "label" : "Milk",
+    "name" : "Chiller 378876",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e7373e30-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "softwareId" : null,
+    "type" : "Chiller"
+  },
+  "credentials" : {
+    "credentialsId" : "5DYUSUzGbQcX9ABJReDM",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e76af860-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "e95933d0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 257653
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1758071697125,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "chillerHighTemperatureCriticalThreshold",
+      "lastUpdateTs" : 1742303664095,
+      "longValue" : 15,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "chillerHighTemperatureMajorThreshold",
+      "lastUpdateTs" : 1742303664095,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1758071697106,
+      "longValue" : 1758071697100,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1742303667099,
+      "longValue" : 15768000000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1742303667125,
+      "longValue" : 1742303667111,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "state",
+      "lastUpdateTs" : 1742303674796,
+      "longValue" : null,
+      "strValue" : "major"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.3240744362093502,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1742303664095,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.2329703441791172,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1742303664095,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

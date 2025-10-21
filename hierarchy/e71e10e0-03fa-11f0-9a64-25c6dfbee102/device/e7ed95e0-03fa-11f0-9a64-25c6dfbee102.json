@@ -1,0 +1,135 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e71e10e0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "e7072d80-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "e7ed95e0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "e7ed95e0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "label" : "Plastic",
+    "name" : "Smart Bin 2",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e71e10e0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "softwareId" : null,
+    "type" : "Smart Bin"
+  },
+  "credentials" : {
+    "credentialsId" : "LASssdDDGaBXsVjEAf9p",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e7517cf0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "e7ed95e0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 257630
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1758071693129,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1758071693120,
+      "longValue" : 1758071693116,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1742303667137,
+      "longValue" : 15768000000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1742303667164,
+      "longValue" : 1742303667151,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowBatteryCriticalThreshold",
+      "lastUpdateTs" : 1742303661705,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowBatteryMajorThreshold",
+      "lastUpdateTs" : 1742303661705,
+      "longValue" : 30,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "state",
+      "lastUpdateTs" : 1742303661764,
+      "longValue" : null,
+      "strValue" : "normal"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.4593,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1742303661705,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.7494,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1742303661705,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -1,0 +1,119 @@
+{
+  "entityType" : "REPORT_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "format" : "CSV",
+      "components" : [ {
+        "background" : null,
+        "borderColor" : null,
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "dataSources" : [ {
+          "alarmFilterConfig" : {
+            "assigneeId" : null,
+            "searchPropagatedAlarms" : false,
+            "severityList" : null,
+            "statusList" : [ "ACTIVE" ],
+            "typeList" : null
+          },
+          "dataKeys" : [ {
+            "aggregationType" : null,
+            "color" : null,
+            "decimals" : null,
+            "label" : "Name",
+            "name" : "name",
+            "postFuncBody" : null,
+            "settings" : null,
+            "timewindow" : null,
+            "type" : "entityField",
+            "units" : null,
+            "usePostProcessing" : false
+          }, {
+            "aggregationType" : "AVG",
+            "color" : "#4caf50",
+            "decimals" : 0,
+            "label" : "Average temperature",
+            "name" : "temperature",
+            "postFuncBody" : null,
+            "settings" : {
+              "cell" : null,
+              "columnWidth" : null,
+              "header" : null,
+              "type" : "COLUMN"
+            },
+            "timewindow" : {
+              "aggregation" : null,
+              "history" : {
+                "historyType" : 2,
+                "quickInterval" : "CURRENT_MONTH",
+                "timewindowMs" : 0
+              },
+              "timezone" : null
+            },
+            "type" : "timeseries",
+            "units" : null,
+            "usePostProcessing" : false
+          } ],
+          "deviceId" : null,
+          "entityAliasId" : "d49710cd-af43-8cb2-d796-def31a427381",
+          "filterId" : null,
+          "latestDataKeys" : null,
+          "type" : "entity"
+        } ],
+        "margins" : {
+          "bottom" : 0,
+          "left" : 0,
+          "right" : 0,
+          "top" : 20
+        },
+        "paddings" : null,
+        "showTableHeading" : false,
+        "subType" : null,
+        "tableHeading" : {
+          "color" : "#000",
+          "font" : {
+            "family" : "Roboto",
+            "size" : 20.0,
+            "style" : "normal",
+            "weight" : "normal"
+          },
+          "height" : 40,
+          "text" : "Entities",
+          "textAlignment" : "center",
+          "verticalAlignment" : "middle"
+        },
+        "tableSortOrder" : {
+          "column" : "Name",
+          "direction" : "ASC"
+        },
+        "type" : "ENTITY_TABLE"
+      } ],
+      "entityAliases" : [ {
+        "alias" : "device alias",
+        "filter" : {
+          "type" : "entityType",
+          "entityType" : "DEVICE"
+        },
+        "id" : "d49710cd-af43-8cb2-d796-def31a427381"
+      } ],
+      "filters" : [ ],
+      "format" : "CSV",
+      "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
+      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "description" : null,
+    "externalId" : null,
+    "format" : "CSV",
+    "id" : {
+      "entityType" : "REPORT_TEMPLATE",
+      "id" : "f19915c0-a525-11f0-8c11-bd35d9cda809"
+    },
+    "name" : "new1234",
+    "ownerId" : null,
+    "type" : "REPORT"
+  }
+}

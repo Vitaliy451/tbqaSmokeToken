@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : { },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "1440c2a0-fdae-11ef-bca0-9d823f5ae12e"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "90857330-a388-11f0-9289-6f201dc104bf"
+    },
+    "label" : "sensor A",
+    "name" : "©®æƛǢȡȩʁɳ෴༗⏿⏿😊😊✅✅𓃡𓃠𓆏𓆝 𓆟 𓆞 𓆝 𓆟˗ˏˋ 𓅰 ˎˊ˗𓃮⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖🙂⃤",
+    "ownerId" : null,
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

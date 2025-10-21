@@ -1,0 +1,98 @@
+{
+  "entityType" : "REPORT_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "format" : "PDF",
+      "components" : [ {
+        "background" : null,
+        "borderColor" : null,
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "dataSources" : [ ],
+        "margins" : null,
+        "paddings" : null,
+        "subType" : null,
+        "type" : "RICH_TEXT",
+        "value" : "<p style=\"line-height: 1.5;\">你好你在听吗</p>\n<p style=\"line-height: 1.5;\">שלום, אתה שם?</p>\n<p style=\"line-height: 1.5;\">こんにちは、そこにいますか</p>\n<p style=\"line-height: 1.5;\">сәлем сен ондасың ба</p>\n<p style=\"line-height: 1.5;\">halò a bheil thu ann?<br>สวัสดี คุณอยู่ไหม</p>\n<p style=\"line-height: 1.5;\">™ ⊗ ∀ ♠ ∑ ≅ ℜ ⊄ ℵ ω ξ Ω Ø ¼ ©, ®, €, £, µ 😀, 🌍, 🎉</p>\n<p style=\"line-height: 1.5;\">안녕하세요? 거기 계세요?<br>გამარჯობა, აქ ხარ?</p>\n<p style=\"line-height: 1.5;\">مرحبا هل أنت هناك ؟<br><br></p>"
+      } ],
+      "entityAliases" : [ ],
+      "filters" : [ ],
+      "footer" : {
+        "components" : [ {
+          "background" : null,
+          "borderColor" : null,
+          "borderRadius" : null,
+          "borderWidth" : null,
+          "dataSources" : [ ],
+          "margins" : null,
+          "paddings" : null,
+          "subType" : null,
+          "type" : "RICH_TEXT",
+          "value" : "<p><span style=\"font-size: 14px; color: rgb(0, 105, 92); font-weight: 500;\">SUBHEADING</span></p>\n<p><span style=\"font-size: 28px; font-weight: 500;\">Heading</span></p>\n<p style=\"line-height: 1.5;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero orci, faucibus in iaculis quis, vestibulum sit amet ligula. Nulla facilisi. Ut ut iaculis tortor.</p>"
+        } ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "format" : "PDF",
+      "header" : {
+        "components" : [ {
+          "background" : null,
+          "borderColor" : null,
+          "borderRadius" : null,
+          "borderWidth" : null,
+          "color" : "#000",
+          "dataSources" : [ ],
+          "font" : {
+            "family" : "Roboto",
+            "size" : 40.0,
+            "style" : "normal",
+            "weight" : "normal"
+          },
+          "height" : null,
+          "margins" : null,
+          "paddings" : null,
+          "subType" : null,
+          "textAlignment" : "center",
+          "type" : "HEADING",
+          "value" : "你好你在听吗  שלום, אתה שם?  こんにちは、そこにいますか  сәлем сен ондасың ба  halò a bheil thu ann?  ™ ⊗ ∀ ♠ ∑ ≅ ℜ ⊄ ℵ ω ξ Ω Ø ¼ ©, ®, €, £, µ 😀, 🌍, 🎉  გამარჯობა, აქ ხარ?  مرحبا هل أنت هناك ؟",
+          "verticalAlignment" : "middle"
+        } ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "namePattern" : "你好你在听吗  שלום, אתה שם?  こんにちは、そこにいますか  сәлем сен ондасың ба  halò a bheil thu ann?  ™ ⊗ ∀ ♠ ∑ ≅ ℜ ⊄ ℵ ω ξ Ω Ø ¼ ©, ®, €, £, µ 😀, 🌍, 🎉  გამარჯობა, აქ ხარ?  مرحبا هل أنت هناك ؟-%d{yyyy-MM-dd_HH:mm:ss}",
+      "pageBackground" : "#fff",
+      "pageMargins" : {
+        "bottom" : 20,
+        "left" : 20,
+        "right" : 20,
+        "top" : 20
+      },
+      "pageOrientation" : "PORTRAIT",
+      "pageSize" : "A4",
+      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "description" : null,
+    "externalId" : null,
+    "format" : "PDF",
+    "id" : {
+      "entityType" : "REPORT_TEMPLATE",
+      "id" : "fc60f590-a061-11f0-9289-6f201dc104bf"
+    },
+    "name" : "test1234",
+    "ownerId" : null,
+    "type" : "REPORT"
+  }
+}

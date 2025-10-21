@@ -1,0 +1,33 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "32c07260-a38b-11f0-8c82-b38e8bd8f7b8"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4a6f3690-76c6-11f0-9589-4be6f5cf4067"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "6a15d8f0-a4e8-11f0-bc83-23748b68cdfd"
+    },
+    "label" : null,
+    "name" : "bugagva",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4a6f3690-76c6-11f0-9589-4be6f5cf4067"
+    },
+    "type" : "مرحباً كيف حالك؟"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

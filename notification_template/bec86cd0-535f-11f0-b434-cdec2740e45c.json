@@ -1,0 +1,39 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "attachReport" : false,
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "extension",
+              "color" : "#000000"
+            },
+            "actionButtonConfig" : null
+          },
+          "body" : "General test",
+          "enabled" : true,
+          "subject" : "General test"
+        },
+        "SLACK" : {
+          "method" : "SLACK",
+          "body" : "General test",
+          "enabled" : true
+        }
+      },
+      "reportTemplateId" : null,
+      "timezone" : null,
+      "userId" : null
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "bec86cd0-535f-11f0-b434-cdec2740e45c"
+    },
+    "name" : "General test",
+    "notificationType" : "GENERAL"
+  }
+}

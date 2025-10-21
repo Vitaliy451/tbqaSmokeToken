@@ -1,0 +1,30 @@
+{
+  "entityType" : "OTA_PACKAGE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "checksum" : "ffed1d1eada35ffcbde19596c3145ac43a280a57ffdce75f07aac32688827306",
+    "checksumAlgorithm" : "SHA256",
+    "contentType" : "text/javascript",
+    "data" : "ZXhwb3J0IGNvbnN0IGNpcmNsZSA9ICcmIzExMDQ0Oyc7Cg==",
+    "dataSize" : 34,
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "e6d34c40-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "externalId" : null,
+    "fileName" : "new_script.js",
+    "hasData" : true,
+    "id" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "a3424210-ad9b-11f0-86d8-81e4c060fe10"
+    },
+    "name" : "Sample",
+    "tag" : "Sample 2",
+    "title" : "Sample",
+    "type" : "SOFTWARE",
+    "url" : null,
+    "version" : "2"
+  }
+}

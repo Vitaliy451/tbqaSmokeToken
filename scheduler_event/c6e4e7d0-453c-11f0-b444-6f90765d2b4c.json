@@ -1,0 +1,49 @@
+{
+  "entityType" : "SCHEDULER_EVENT",
+  "entity" : {
+    "additionalInfo" : null,
+    "configuration" : {
+      "msgBody" : {
+        "reportConfig" : {
+          "baseUrl" : "https://tbqa.cloud",
+          "useDashboardTimewindow" : true,
+          "timewindow" : {
+            "selectedTab" : 1,
+            "history" : {
+              "historyType" : 0,
+              "interval" : 1000,
+              "timewindowMs" : 86400000
+            }
+          },
+          "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
+          "type" : "pdf",
+          "timezone" : "Europe/Kiev",
+          "useCurrentUserCredentials" : true,
+          "userId" : "1495c070-fdae-11ef-bca0-9d823f5ae12e",
+          "dashboardId" : "775264c0-1618-11f0-83af-810d2131a4b3",
+          "state" : ""
+        },
+        "sendEmail" : null
+      },
+      "metadata" : { }
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "SCHEDULER_EVENT",
+      "id" : "c6e4e7d0-453c-11f0-b444-6f90765d2b4c"
+    },
+    "name" : "test10",
+    "originatorId" : null,
+    "ownerId" : null,
+    "schedule" : {
+      "timezone" : "Europe/Kiev",
+      "startTime" : 1749416400000
+    },
+    "type" : "generateDashboardReport"
+  }
+}

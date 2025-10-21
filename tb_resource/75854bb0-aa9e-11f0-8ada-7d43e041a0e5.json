@@ -1,0 +1,25 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "ZXhwb3J0IGNvbnN0IGNpcmNsZSA9ICcmIzExMDQ0Oyc7Cg==",
+    "descriptor" : null,
+    "etag" : "ffed1d1eada35ffcbde19596c3145ac43a280a57ffdce75f07aac32688827306",
+    "externalId" : null,
+    "fileName" : "new_script.js",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "75854bb0-aa9e-11f0-8ada-7d43e041a0e5"
+    },
+    "link" : "/api/resource/js_module/tenant/new_script.js",
+    "name" : "My test extension",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "new_script.js",
+    "resourceSubType" : "EXTENSION",
+    "resourceType" : "JS_MODULE",
+    "title" : "My test extension"
+  }
+}

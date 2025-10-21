@@ -1,0 +1,87 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "56d341b0-1622-11f0-9a0c-0bc6e65ebcdf"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "56d341b0-1622-11f0-9a0c-0bc6e65ebcdf"
+    },
+    "image" : null,
+    "name" : "Profile LWM",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "LWM2M",
+        "bootstrap" : [ {
+          "securityMode" : "NO_SEC",
+          "binding" : "U",
+          "bootstrapServerAccountTimeout" : 0,
+          "bootstrapServerIs" : false,
+          "clientHoldOffTime" : 1,
+          "defaultMinPeriod" : 1,
+          "host" : "0.0.0.0",
+          "lifetime" : 300,
+          "notifIfDisabled" : true,
+          "port" : 5685,
+          "serverCertificate" : "",
+          "serverPublicKey" : "",
+          "shortServerId" : 123
+        } ],
+        "bootstrapServerUpdateEnable" : false,
+        "clientLwM2mSettings" : {
+          "clientOnlyObserveAfterConnect" : 1,
+          "defaultObjectIDVer" : "1.0",
+          "edrxCycle" : 81000,
+          "fwUpdateResource" : null,
+          "fwUpdateStrategy" : 1,
+          "pagingTransmissionWindow" : 10000,
+          "powerMode" : "DRX",
+          "psmActivityTimer" : 10000,
+          "swUpdateResource" : null,
+          "swUpdateStrategy" : 1,
+          "useObject19ForOtaInfo" : null
+        },
+        "observeAttr" : {
+          "attribute" : [ "/5130_1.0/0/4001", "/5130_1.0/0/851", "/5130_1.0/0/850", "/5130_1.0/0/901" ],
+          "attributeLwm2m" : { },
+          "keyName" : {
+            "/5130_1.0/0/4001" : "objectversion",
+            "/5130_1.0/0/850" : "vitaliyTenantResourcesLib",
+            "/5130_1.0/0/851" : "keys",
+            "/5130_1.0/0/901" : "documentaryDescription"
+          },
+          "observe" : [ ],
+          "observeStrategy" : "SINGLE",
+          "telemetry" : [ ]
+        }
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "LWM2M",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

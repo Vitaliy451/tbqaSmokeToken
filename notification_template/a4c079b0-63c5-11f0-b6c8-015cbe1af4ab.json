@@ -1,0 +1,40 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "attachReport" : false,
+      "deliveryMethodsTemplates" : {
+        "MOBILE_APP" : {
+          "method" : "MOBILE_APP",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "notifications",
+              "color" : "#757575"
+            },
+            "onClick" : {
+              "enabled" : true,
+              "linkType" : "DASHBOARD",
+              "dashboardId" : "31cb9040-5cac-11f0-b4b0-715163f5029c",
+              "dashboardState" : "default",
+              "setEntityIdInState" : true
+            }
+          },
+          "body" : "Mobile notification test",
+          "enabled" : true,
+          "subject" : "Mobile test"
+        }
+      },
+      "reportTemplateId" : null,
+      "timezone" : null,
+      "userId" : null
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "a4c079b0-63c5-11f0-b6c8-015cbe1af4ab"
+    },
+    "name" : "Mobile",
+    "notificationType" : "GENERAL"
+  }
+}

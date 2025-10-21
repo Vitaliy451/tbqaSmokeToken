@@ -1,0 +1,63 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "18 10th St",
+    "address2" : null,
+    "city" : "San Francisco",
+    "country" : "United States",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : "retailerA.wbersnmx0i@thingsboard.org",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e71e10e0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "name" : "Retail Company A",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "CA",
+    "title" : "Retail Company A",
+    "zip" : "94103"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e71e10e0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e7517cf0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "type" : "Owns",
+    "typeGroup" : "COMMON",
+    "version" : 257622
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e71e10e0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e761d0a0-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "type" : "Owns",
+    "typeGroup" : "COMMON",
+    "version" : 257623
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1742303660397,
+      "longValue" : null,
+      "strValue" : "18 10th St, San Francisco, CA 94103, United States"
+    } ]
+  }
+}

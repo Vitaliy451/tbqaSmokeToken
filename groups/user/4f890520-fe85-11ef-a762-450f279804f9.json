@@ -1,0 +1,95 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "first_name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "last_name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "email",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : { }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : null,
+    "groupAll" : false,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "4f890520-fe85-11ef-a762-450f279804f9"
+    },
+    "name" : "Building B Admins",
+    "ownerId" : {
+      "entityType" : "TENANT",
+      "id" : "14095ef0-fdae-11ef-bca0-9d823f5ae12e"
+    },
+    "type" : "USER"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "groupEntities" : true,
+  "permissions" : [ {
+    "entityGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "94308d10-fe85-11ef-9a14-a1017d5725c7"
+    },
+    "entityGroupType" : "DEVICE",
+    "roleId" : {
+      "entityType" : "ROLE",
+      "id" : "4ef39100-fe87-11ef-a762-450f279804f9"
+    },
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "14095ef0-fdae-11ef-bca0-9d823f5ae12e"
+    },
+    "userGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "4f890520-fe85-11ef-a762-450f279804f9"
+    },
+    "createdTime" : 1741704785427,
+    "id" : {
+      "entityType" : "GROUP_PERMISSION",
+      "id" : "89e50630-fe88-11ef-a762-450f279804f9"
+    },
+    "name" : "GROUP_[4f890520-fe85-11ef-a762-450f279804f9]_[4ef39100-fe87-11ef-a762-450f279804f9]_[94308d10-fe85-11ef-9a14-a1017d5725c7]_[DEVICE]",
+    "public" : false
+  }, {
+    "entityGroupId" : null,
+    "entityGroupType" : null,
+    "roleId" : {
+      "entityType" : "ROLE",
+      "id" : "c0f106b0-04d2-11f0-9515-a768e50bf14c"
+    },
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "14095ef0-fdae-11ef-bca0-9d823f5ae12e"
+    },
+    "userGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "4f890520-fe85-11ef-a762-450f279804f9"
+    },
+    "createdTime" : 1742396438785,
+    "id" : {
+      "entityType" : "GROUP_PERMISSION",
+      "id" : "eb6bf710-04d2-11f0-9515-a768e50bf14c"
+    },
+    "name" : "GENERIC_[4f890520-fe85-11ef-a762-450f279804f9]_[c0f106b0-04d2-11f0-9515-a768e50bf14c]",
+    "public" : false
+  } ]
+}

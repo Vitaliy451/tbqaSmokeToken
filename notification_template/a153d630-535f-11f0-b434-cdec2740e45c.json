@@ -1,0 +1,39 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "attachReport" : false,
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "school",
+              "color" : "#000000"
+            },
+            "actionButtonConfig" : null
+          },
+          "body" : "Device activated",
+          "enabled" : true,
+          "subject" : "Device activated"
+        },
+        "SLACK" : {
+          "method" : "SLACK",
+          "body" : "Device activated",
+          "enabled" : true
+        }
+      },
+      "reportTemplateId" : null,
+      "timezone" : null,
+      "userId" : null
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "a153d630-535f-11f0-b434-cdec2740e45c"
+    },
+    "name" : "Test template",
+    "notificationType" : "DEVICE_ACTIVITY"
+  }
+}

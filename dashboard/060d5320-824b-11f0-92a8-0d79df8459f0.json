@@ -1,0 +1,317 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "MobileRedirect_TEST2",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "7bd821c3-50a2-a32a-de9b-dcd36ffc4152" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "4c3cb64b-b33e-27c9-33bc-467ec1c96fdd",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751368206714,
+                  "endTimeMs" : 1751454606714
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
+              "markdownTextFunction" : "\r\nconst params = new URLSearchParams(window.location.search);\r\n// Vytvor HTML s checkboxom\r\nconst html = `\r\n  <label>\r\n    ${params}\r\n  </label>\r\n`;\r\n\r\nreturn html;\r\n",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "7bd821c3-50a2-a32a-de9b-dcd36ffc4152"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "TEST2",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "7bd821c3-50a2-a32a-de9b-dcd36ffc4152" : {
+                  "sizeX" : 5,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "ed3da29c-4595-b8be-d1d0-477461c87e3c" : {
+          "id" : "ed3da29c-4595-b8be-d1d0-477461c87e3c",
+          "alias" : "Stav zařízení",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "861b2c20-0fcf-11f0-a614-cf36f24f01c6"
+            }
+          }
+        },
+        "d028c058-3dbc-b5c5-1ff1-5e1de74db347" : {
+          "id" : "d028c058-3dbc-b5c5-1ff1-5e1de74db347",
+          "alias" : "GPSka",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "e539d990-68ad-11f0-a9ce-b7734ebe0d78", "c4220380-68b8-11f0-a9ce-b7734ebe0d78" ]
+          }
+        },
+        "458e9f68-dae2-b35a-d8a7-555e843e7cb5" : {
+          "id" : "458e9f68-dae2-b35a-d8a7-555e843e7cb5",
+          "alias" : "Stav zařízení1",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "beacon",
+            "defaultStateEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "e539d990-68ad-11f0-a9ce-b7734ebe0d78"
+            }
+          }
+        },
+        "4c3cb64b-b33e-27c9-33bc-467ec1c96fdd" : {
+          "id" : "4c3cb64b-b33e-27c9-33bc-467ec1c96fdd",
+          "alias" : "State",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DASHBOARD",
+              "id" : "197a1600-5735-11f0-9fec-89b36f233d59"
+            }
+          }
+        }
+      },
+      "filters" : {
+        "9d10356c-d4ce-5758-7318-5249ed5d95f1" : {
+          "id" : "9d10356c-d4ce-5758-7318-5249ed5d95f1",
+          "filter" : "Customers",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "SERVER_ATTRIBUTE",
+              "key" : "port-customers-ids"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "CONTAINS",
+                "value" : {
+                  "defaultValue" : "cfe79350-dd4b-11ee-bde4-eb4fc2a6c545",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : true,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "port-customers contains",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        },
+        "5c858eb1-29bb-7d62-218e-a7cfcb313b65" : {
+          "id" : "5c858eb1-29bb-7d62-218e-a7cfcb313b65",
+          "filter" : "DeviceFilter",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "type"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "EQUAL",
+                "value" : {
+                  "defaultValue" : "",
+                  "dynamicValue" : {
+                    "sourceType" : "CURRENT_USER",
+                    "sourceAttribute" : "selectedDeviceProfile",
+                    "inherit" : false
+                  }
+                },
+                "ignoreCase" : false,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        },
+        "311fbf06-e609-7673-ce42-80c702a7a0dc" : {
+          "id" : "311fbf06-e609-7673-ce42-80c702a7a0dc",
+          "filter" : "HOPPI",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "ownerName"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "CONTAINS",
+                "value" : {
+                  "defaultValue" : "HOPI",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : false,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        }
+      },
+      "timewindow" : {
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 86400000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1747810147760,
+            "endTimeMs" : 1747896547760
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "aggregation" : {
+          "type" : "NONE",
+          "limit" : 25000
+        },
+        "timezone" : null
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "name" : "MobileRedirect_TEST2",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "060d5320-824b-11f0-92a8-0d79df8459f0"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

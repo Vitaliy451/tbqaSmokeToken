@@ -1,0 +1,135 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e7373e30-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "e70c3690-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "e9475980-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "e9475980-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "label" : "Vegetables",
+    "name" : "Smart Shelf 89546",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e7373e30-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "softwareId" : null,
+    "type" : "Smart Shelf"
+  },
+  "credentials" : {
+    "credentialsId" : "joocsJC004Dl7TzDO21j",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e76af860-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "e9475980-03fa-11f0-9a64-25c6dfbee102"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 257652
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1758071693155,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1758071693117,
+      "longValue" : 1758071693116,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1742303667122,
+      "longValue" : 15768000000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1742303667173,
+      "longValue" : 1742303667135,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowWeightCriticalThreshold",
+      "lastUpdateTs" : 1742303663971,
+      "longValue" : 5,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowWeightMajorThreshold",
+      "lastUpdateTs" : 1742303663971,
+      "longValue" : 15,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "state",
+      "lastUpdateTs" : 1742303673589,
+      "longValue" : null,
+      "strValue" : "normal"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.5156885661722124,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1742303663971,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.3227717783356312,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1742303663971,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

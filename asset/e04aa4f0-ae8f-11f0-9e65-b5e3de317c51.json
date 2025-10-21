@@ -25,6 +25,7 @@
     "ownerId" : null,
     "type" : "مرحباً كيف حالك؟"
   },
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   },

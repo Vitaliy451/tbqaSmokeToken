@@ -1,0 +1,36 @@
+{
+  "entityType" : "CONVERTER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "scriptLang" : "TBEL",
+      "decoder" : null,
+      "tbelDecoder" : "/** Decoder **/\n\n// decode payload to JSON\nvar data = decodeToJson(payload);\n\n// Result object with device/asset attributes/telemetry data\n\nvar deviceName = data.deviceName;\nvar deviceType = data.deviceType;\nvar result = {\n    deviceName: deviceName,\n    deviceType: deviceType,\n    attributes: {},\n    telemetry: {\n        temperature: data.temperature,\n        humidity: data.humidity\n    }\n};\n\n/** Helper functions 'decodeToString' and 'decodeToJson' are already built-in **/\n\nreturn result;",
+      "encoder" : null,
+      "tbelEncoder" : null,
+      "updateOnlyKeys" : [ "manufacturer" ]
+    },
+    "converterVersion" : 1,
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1755264220907,
+      "failuresEnabled" : true
+    },
+    "edgeTemplate" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CONVERTER",
+      "id" : "030353b0-79d5-11f0-a4b3-6da853de9ae0"
+    },
+    "integrationType" : "UDP",
+    "name" : "Uplink data converter for UDP integration",
+    "type" : "UPLINK"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

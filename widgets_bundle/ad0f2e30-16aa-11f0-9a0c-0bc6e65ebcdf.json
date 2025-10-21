@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "vitaliy_tenant_widget_bundle",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "ad0f2e30-16aa-11f0-9a0c-0bc6e65ebcdf"
+    },
+    "image" : "tb-image;/api/images/tenant/profile-icon-design-free-vector.jpg",
+    "name" : "Vitaliy tenant widget bundle",
+    "order" : null,
+    "scada" : false,
+    "title" : "Vitaliy tenant widget bundle"
+  },
+  "fqns" : [ ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

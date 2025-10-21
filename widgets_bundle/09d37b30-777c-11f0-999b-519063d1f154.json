@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "smoke_bundle",
+    "description" : "fsfefessefse",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "09d37b30-777c-11f0-999b-519063d1f154"
+    },
+    "image" : "tb-image;/api/images/tenant/gamepad-controller (1)_(1).svg",
+    "name" : "Smoke Bundle",
+    "order" : null,
+    "scada" : false,
+    "title" : "Smoke Bundle"
+  },
+  "fqns" : [ "ctrl_widget", "al_widget", "ts_widget", "ls_widget", "stc_widget", "scada_hp_wind_turbine" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

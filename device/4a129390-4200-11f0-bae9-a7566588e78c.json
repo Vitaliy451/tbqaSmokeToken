@@ -1,0 +1,91 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "f0bbfe80-4204-11f0-8ce1-4b0808fa50a0"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "4a129390-4200-11f0-bae9-a7566588e78c"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "4a129390-4200-11f0-bae9-a7566588e78c"
+    },
+    "label" : "",
+    "name" : "Attribute device",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Attribute Alarm Test"
+  },
+  "credentials" : {
+    "credentialsId" : "Wb1g9InRT168vraeMaUJ",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1749135163237,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1749135163237,
+      "longValue" : 1749135163233,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1749134552270,
+      "longValue" : 1749134551182,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "var",
+      "lastUpdateTs" : 1749132721894,
+      "longValue" : 15,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "attribute",
+      "lastUpdateTs" : 1749133002802,
+      "longValue" : 12,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

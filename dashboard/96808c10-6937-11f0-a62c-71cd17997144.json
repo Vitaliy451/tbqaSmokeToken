@@ -1,0 +1,2163 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "Not working links/redirection to other dashboards from home dashboard",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "07f93828-2523-6001-3ae5-a112e06e21a1" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Navigate to other dashboard - new tab",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "openDashboard",
+                "targetDashboardStateId" : "",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : true,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "07f93828-2523-6001-3ae5-a112e06e21a1"
+        },
+        "d5aee1c1-9060-1ce2-2405-5da9ba92a953" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Navigate to other dashboard - same tab",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "openDashboard",
+                "targetDashboardStateId" : "",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : false,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d5aee1c1-9060-1ce2-2405-5da9ba92a953"
+        },
+        "7aedde5e-c983-adcc-b670-416f153dfba6" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "New state",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : false,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "var(--tb-primary-500)",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "basic",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "7aedde5e-c983-adcc-b670-416f153dfba6"
+        },
+        "bf9a73dc-46c0-2c34-6435-8947a624ffe0" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Navigate to new dashboard state - right layout",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "new_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : true,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "openRightLayout" : true
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "bf9a73dc-46c0-2c34-6435-8947a624ffe0"
+        },
+        "4ad10c05-e90d-a752-8502-37f2eabd8987" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Navigate to new dashboard state",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "new_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : true,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "openRightLayout" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "4ad10c05-e90d-a752-8502-37f2eabd8987"
+        },
+        "3c408033-4ea7-6e78-1480-fd9ce2b2c03d" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "deviceId" : "3ab9c480-46c5-11f0-9cdf-bd487461effd",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Mobile action - Take screenshot",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "targetDashboardStateId" : "new_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : true,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "openRightLayout" : false,
+                "mobileAction" : {
+                  "type" : "takeScreenshot",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Take screenshot action was cancelled!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to take screenshot', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "processImageFunction" : "// Function body to process image obtained as a result of mobile action (take photo, take image from gallery, etc.). \n// - imageUrl - image URL in base64 data format\n\nshowImageDialog('Screenshot', imageUrl);\nsaveEntityImageAttribute('image', imageUrl);\n\nfunction showImageDialog(title, imageUrl) {\n    setTimeout(function() {\n        widgetContext.customDialog.customDialog(imageDialogTemplate, ImageDialogController, {imageUrl: imageUrl, title: title}).subscribe();\n    }, 100);\n}\n\nfunction saveEntityImageAttribute(attributeName, imageUrl) {\n    if (entityId) {\n        let attributes = [{\n            key: attributeName, value: imageUrl\n        }];\n        widgetContext.attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributes).subscribe(\n           function() {\n               widgetContext.showSuccessToast('Image attribute saved!');\n           },\n           function(error) {\n               widgetContext.dialogs.alert('Image attribute save failed', JSON.stringify(error));\n           }\n        );\n    }\n}\n\nvar\n  imageDialogTemplate =\n    '<div aria-label=\"Image\">' +\n    '<form #theForm=\"ngForm\">' +\n    '<mat-toolbar class=\"flex flex-row\" color=\"primary\">' +\n    '<h2>{{title}}</h2>' +\n    '<span class=\"flex-1\"></span>' +\n    '<button mat-icon-button (click)=\"close()\">' +\n    '<mat-icon>close</mat-icon>' +\n    '</button>' +\n    '</mat-toolbar>' +\n    '<div mat-dialog-content>' +\n    '<div class=\"mat-content mat-padding\">' +\n    '<div class=\"flex flex-1 flex-col\">' +\n    '<div style=\"padding-top: 20px;\">' +\n    '<img [src]=\"imageUrl\" style=\"height: 500px;\"/>' +\n    '</div>' +\n    '</div>' +\n    '</div>' +\n    '</div>' +\n    '<div mat-dialog-actions class=\"flex flex-row\">' +\n    '<span class=\"flex-1\"></span>' +\n    '<button mat-button (click)=\"close()\" style=\"margin-right:20px;\">Close</button>' +\n    '</div>' +\n    '</form>' +\n    '</div>';\n\nfunction ImageDialogController(instance) {\n  let vm = instance;\n  vm.title = vm.data.title;\n  vm.imageUrl = vm.data.imageUrl;\n  vm.close = function ()\n  {\n    vm.dialogRef.close(null);\n  }\n}\n"
+                }
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "3c408033-4ea7-6e78-1480-fd9ce2b2c03d"
+        },
+        "9a3f1aed-f331-5b99-6fea-16eda0929369" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Right layout",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : false,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "var(--tb-primary-500)",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "basic",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "9a3f1aed-f331-5b99-6fea-16eda0929369"
+        },
+        "a1b55c0b-3f39-1df7-e509-442f4c4c395f" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "deviceId" : "4aaa2610-45d9-11f0-b444-6f90765d2b4c",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Mobile action - Take picture from gallery",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "targetDashboardStateId" : "new_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : true,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "openRightLayout" : false,
+                "mobileAction" : {
+                  "type" : "takePictureFromGallery",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Take picture from gallery action was cancelled!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to take picture from gallery', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "processImageFunction" : "// Function body to process image obtained as a result of mobile action (take photo, take image from gallery, etc.). \n// - imageUrl - image URL in base64 data format\n\nshowImageDialog('Gallery picture', imageUrl);\n//saveEntityImageAttribute('image', imageUrl);\n\nfunction showImageDialog(title, imageUrl) {\n    setTimeout(function() {\n        widgetContext.customDialog.customDialog(imageDialogTemplate, ImageDialogController, {imageUrl: imageUrl, title: title}).subscribe();\n    }, 100);\n}\n\nfunction saveEntityImageAttribute(attributeName, imageUrl) {\n    if (entityId) {\n        let attributes = [{\n            key: attributeName, value: imageUrl\n        }];\n        widgetContext.attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributes).subscribe(\n           function() {\n               widgetContext.showSuccessToast('Image attribute saved!');\n           },\n           function(error) {\n               widgetContext.dialogs.alert('Image attribute save failed', JSON.stringify(error));\n           }\n        );\n    }\n}\n\nvar\n  imageDialogTemplate =\n    '<div aria-label=\"Image\">' +\n    '<form #theForm=\"ngForm\">' +\n    '<mat-toolbar class=\"flex flex-row\" color=\"primary\">' +\n    '<h2>{{title}}</h2>' +\n    '<span class=\"flex-1\"></span>' +\n    '<button mat-icon-button (click)=\"close()\">' +\n    '<mat-icon>close</mat-icon>' +\n    '</button>' +\n    '</mat-toolbar>' +\n    '<div mat-dialog-content>' +\n    '<div class=\"mat-content mat-padding\">' +\n    '<div class=\"flex flex-1 flex-col\">' +\n    '<div style=\"padding-top: 20px;\">' +\n    '<img [src]=\"imageUrl\" style=\"height: 300px;\"/>' +\n    '</div>' +\n    '</div>' +\n    '</div>' +\n    '</div>' +\n    '<div mat-dialog-actions class=\"flex flex-row\">' +\n    '<span class=\"flex-1\"></span>' +\n    '<button mat-button (click)=\"close()\" style=\"margin-right:20px;\">Close</button>' +\n    '</div>' +\n    '</form>' +\n    '</div>';\n\nfunction ImageDialogController(instance) {\n  let vm = instance;\n  vm.title = vm.data.title;\n  vm.imageUrl = vm.data.imageUrl;\n  vm.close = function ()\n  {\n    vm.dialogRef.close(null);\n  }\n}\n"
+                }
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a1b55c0b-3f39-1df7-e509-442f4c4c395f"
+        },
+        "fbb4cbe8-a435-ad30-fe3a-8578f2218a71" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Mobile action - Take photo",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "targetDashboardStateId" : "new_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : true,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "openRightLayout" : false,
+                "mobileAction" : {
+                  "type" : "takePhoto",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Take photo action was cancelled!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to take photo', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "processImageFunction" : "// Function body to process image obtained as a result of mobile action (take photo, take image from gallery, etc.). \n// - imageUrl - image URL in base64 data format\n\nshowImageDialog('Photo', imageUrl);\n//saveEntityImageAttribute('image', imageUrl);\n\nfunction showImageDialog(title, imageUrl) {\n    setTimeout(function() {\n        widgetContext.customDialog.customDialog(imageDialogTemplate, ImageDialogController, {imageUrl: imageUrl, title: title}).subscribe();\n    }, 100);\n}\n\nfunction saveEntityImageAttribute(attributeName, imageUrl) {\n    if (entityId) {\n        let attributes = [{\n            key: attributeName, value: imageUrl\n        }];\n        widgetContext.attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributes).subscribe(\n           function() {\n               widgetContext.showSuccessToast('Image attribute saved!');\n           },\n           function(error) {\n               widgetContext.dialogs.alert('Image attribute save failed', JSON.stringify(error));\n           }\n        );\n    }\n}\n\nvar\n  imageDialogTemplate =\n    '<div aria-label=\"Image\">' +\n    '<form #theForm=\"ngForm\">' +\n    '<mat-toolbar class=\"flex flex-row\" color=\"primary\">' +\n    '<h2>{{title}}</h2>' +\n    '<span class=\"flex-1\"></span>' +\n    '<button mat-icon-button (click)=\"close()\">' +\n    '<mat-icon>close</mat-icon>' +\n    '</button>' +\n    '</mat-toolbar>' +\n    '<div mat-dialog-content>' +\n    '<div class=\"mat-content mat-padding\">' +\n    '<div class=\"flex flex-1 flex-col\">' +\n    '<div style=\"padding-top: 20px;\">' +\n    '<img [src]=\"imageUrl\" style=\"height: 300px;\"/>' +\n    '</div>' +\n    '</div>' +\n    '</div>' +\n    '</div>' +\n    '<div mat-dialog-actions class=\"flex flex-row\">' +\n    '<span class=\"flex-1\"></span>' +\n    '<button mat-button (click)=\"close()\" style=\"margin-right:20px;\">Close</button>' +\n    '</div>' +\n    '</form>' +\n    '</div>';\n\nfunction ImageDialogController(instance) {\n  let vm = instance;\n  vm.title = vm.data.title;\n  vm.imageUrl = vm.data.imageUrl;\n  vm.close = function ()\n  {\n    vm.dialogRef.close(null);\n  }\n}\n"
+                }
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "fbb4cbe8-a435-ad30-fe3a-8578f2218a71"
+        },
+        "37ed5a8b-1dab-fe64-3f62-19a9f3d114d4" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "deviceId" : "ec37f480-5c04-11f0-b4b0-715163f5029c",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Mobile action - Open map directions",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "targetDashboardStateId" : "new_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : true,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "openRightLayout" : false,
+                "mobileAction" : {
+                  "type" : "mapDirection",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Open map directions was not invoked!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to open map directions', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "getLocationFunction" : "// Function body that should return location as array of two numbers (latitude, longitude) for further processing by mobile action.\n// Usually location can be obtained from entity attributes/telemetry. \n\nreturn getLocationFromEntityAttributes();\n//return [30, 30]; // TEST LOCATION\n\n\nfunction getLocationFromEntityAttributes() {\n    if (entityId) {\n        return widgetContext.attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', ['latitude', 'longitude']).pipe(widgetContext.rxjs.map(function(attributeData) {\n            var res = [0,0];\n            if (attributeData && attributeData.length === 2) {\n                res[0] = attributeData.filter(function (data) { return data.key === 'latitude'})[0].value;\n                res[1] = attributeData.filter(function (data) { return data.key === 'longitude'})[0].value;\n            }\n            return res;\n        }));\n    } else {\n        return [0,0];\n    }\n}\n",
+                  "processLaunchResultFunction" : "// Optional function body to process result of attempt to launch external mobile application (for ex. map application or phone call application). \n// - launched - boolean value indicating if the external application was successfully launched.\n\nshowLaunchStatusDialog('Map direction', launched);\n\nfunction showLaunchStatusDialog(title, status) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, status ? 'Successfully launched' : 'Failed to launch').subscribe();\n    }, 100);\n}\n"
+                }
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "37ed5a8b-1dab-fe64-3f62-19a9f3d114d4"
+        },
+        "136cee3c-ff16-6f91-0de0-eb2062c94f64" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Mobile action - Open map location",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "targetDashboardStateId" : "new_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : true,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "openRightLayout" : false,
+                "mobileAction" : {
+                  "type" : "mapLocation",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Open location on map was not invoked!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to open map location', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "getLocationFunction" : "// Function body that should return location as array of two numbers (latitude, longitude) for further processing by mobile action.\n// Usually location can be obtained from entity attributes/telemetry. \n\nreturn getLocationFromEntityAttributes();\n//return [30, 30]; // TEST LOCATION\n\n\nfunction getLocationFromEntityAttributes() {\n    if (entityId) {\n        return widgetContext.attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', ['latitude', 'longitude']).pipe(widgetContext.rxjs.map(function(attributeData) {\n            var res = [0,0];\n            if (attributeData && attributeData.length === 2) {\n                res[0] = attributeData.filter(function (data) { return data.key === 'latitude'})[0].value;\n                res[1] = attributeData.filter(function (data) { return data.key === 'longitude'})[0].value;\n            }\n            return res;\n        }));\n    } else {\n        return [0,0];\n    }\n}\n",
+                  "processLaunchResultFunction" : "// Optional function body to process result of attempt to launch external mobile application (for ex. map application or phone call application). \n// - launched - boolean value indicating if the external application was successfully launched.\n\nshowLaunchStatusDialog('Map location', launched);\n\nfunction showLaunchStatusDialog(title, status) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, status ? 'Successfully launched' : 'Failed to launch').subscribe();\n    }, 100);\n}\n"
+                }
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "136cee3c-ff16-6f91-0de0-eb2062c94f64"
+        },
+        "b750e869-b867-d16c-56ef-f072037c1c22" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Mobile action -  Scan QR Code",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "targetDashboardStateId" : "new_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : true,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "openRightLayout" : false,
+                "mobileAction" : {
+                  "type" : "scanQrCode",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Scan QR code action was canceled!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to scan QR code', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "processQrCodeFunction" : "// Function body to process result of QR code scanning. \n// - code - scanned QR code\n// - format - scanned QR code format\n\nshowQrCodeDialog('QR Code', code, format);\n\nfunction showQrCodeDialog(title, code, format) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, 'Code: ['+code+']<br>Format: ' + format).subscribe();\n    }, 100);\n}\n"
+                }
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "b750e869-b867-d16c-56ef-f072037c1c22"
+        },
+        "218ca323-23ee-1fdb-be58-7849dbf267e4" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Mobile action -  Make phone call",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "targetDashboardStateId" : "new_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : true,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "openRightLayout" : false,
+                "mobileAction" : {
+                  "type" : "makePhoneCall",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Phone call was not invoked!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to make phone call', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "getPhoneNumberFunction" : "// Function body that should return phone number for further processing by mobile action.\n// Usually phone number can be obtained from entity attributes/telemetry. \n\nreturn getPhoneNumberFromEntityAttributes();\n//return 123456789; // TEST PHONE NUMBER\n\n\nfunction getPhoneNumberFromEntityAttributes() {\n    if (entityId) {\n        return widgetContext.attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', ['phone']).pipe(widgetContext.rxjs.map(function(attributeData) {\n            var res = 0;\n            if (attributeData && attributeData.length === 1) {\n                res = attributeData[0].value;\n            }\n            return res;\n        }));\n    } else {\n        return 0;\n    }\n}\n",
+                  "processLaunchResultFunction" : "// Optional function body to process result of attempt to launch external mobile application (for ex. map application or phone call application). \n// - launched - boolean value indicating if the external application was successfully launched.\n\nshowLaunchStatusDialog('Phone call', launched);\n\nfunction showLaunchStatusDialog(title, status) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, status ? 'Successfully launched' : 'Failed to launch').subscribe();\n    }, 100);\n}\n"
+                }
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "218ca323-23ee-1fdb-be58-7849dbf267e4"
+        },
+        "d6f272ff-84a1-23e5-0703-034c8bf64379" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1751873686558,
+                  "endTimeMs" : 1751960086558
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Mobile action -  Get phone location",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "966222f2-a605-2b15-71ee-f16c69f5a4da",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "targetDashboardStateId" : "new_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : true,
+                "targetDashboardId" : "ab931b70-40ad-11f0-ba05-f307a5231709",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "openRightLayout" : false,
+                "mobileAction" : {
+                  "type" : "getLocation",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Get location action was canceled!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to get phone location', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "processLocationFunction" : "// Function body to process current location of the phone. \n// - latitude - phone location latitude\n// - longitude - phone location longitude\n\nshowLocationDialog('Location', latitude, longitude);\n// saveEntityLocationAttributes('latitude', 'longitude', latitude, longitude);\n\nfunction saveEntityLocationAttributes(latitudeAttributeName, longitudeAttributeName, latitude, longitude) {\n    if (entityId) {\n        let attributes = [\n            { key: latitudeAttributeName, value: latitude },\n            { key: longitudeAttributeName, value: longitude }\n        ];\n        widgetContext.attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributes).subscribe(\n           function() {\n               widgetContext.showSuccessToast('Location attributes saved!');\n           },\n           function(error) {\n               widgetContext.dialogs.alert('Location attributes save failed', JSON.stringify(error));\n           }\n        );\n    }\n}\n\n\nfunction showLocationDialog(title, latitude, longitude) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, 'Latitude: '+latitude+'<br>Longitude: ' + longitude).subscribe();\n    }, 100);\n}"
+                }
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d6f272ff-84a1-23e5-0703-034c8bf64379"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Not working links/redirection to other dashboards from home dashboard",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "07f93828-2523-6001-3ae5-a112e06e21a1" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "d5aee1c1-9060-1ce2-2405-5da9ba92a953" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 5
+                },
+                "bf9a73dc-46c0-2c34-6435-8947a624ffe0" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 2,
+                  "col" : 0
+                },
+                "4ad10c05-e90d-a752-8502-37f2eabd8987" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 2,
+                  "col" : 5
+                },
+                "3c408033-4ea7-6e78-1480-fd9ce2b2c03d" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 4,
+                  "col" : 0
+                },
+                "a1b55c0b-3f39-1df7-e509-442f4c4c395f" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 4,
+                  "col" : 5
+                },
+                "fbb4cbe8-a435-ad30-fe3a-8578f2218a71" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 6,
+                  "col" : 0
+                },
+                "37ed5a8b-1dab-fe64-3f62-19a9f3d114d4" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 6,
+                  "col" : 5
+                },
+                "136cee3c-ff16-6f91-0de0-eb2062c94f64" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 8,
+                  "col" : 0
+                },
+                "b750e869-b867-d16c-56ef-f072037c1c22" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 8,
+                  "col" : 5
+                },
+                "218ca323-23ee-1fdb-be58-7849dbf267e4" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 10,
+                  "col" : 0
+                },
+                "d6f272ff-84a1-23e5-0703-034c8bf64379" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 10,
+                  "col" : 5
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "new_state" : {
+          "name" : "new state",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "7aedde5e-c983-adcc-b670-416f153dfba6" : {
+                  "sizeX" : 10,
+                  "sizeY" : 5,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "divider",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 12,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "layoutDimension" : {
+                  "type" : "percentage",
+                  "leftWidthPercentage" : 50
+                }
+              }
+            },
+            "right" : {
+              "widgets" : {
+                "9a3f1aed-f331-5b99-6fea-16eda0929369" : {
+                  "sizeX" : 10,
+                  "sizeY" : 5,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "divider",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 12,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : { },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1751873677739,
+            "endTimeMs" : 1751960077739
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "name" : "Not working links/redirection to other dashboards from home dashboard",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "96808c10-6937-11f0-a62c-71cd17997144"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

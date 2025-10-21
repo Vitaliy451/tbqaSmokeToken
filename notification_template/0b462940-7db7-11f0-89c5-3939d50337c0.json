@@ -1,0 +1,48 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "attachReport" : false,
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "mdi:kettle-steam",
+              "color" : "#FF0004"
+            },
+            "actionButtonConfig" : null
+          },
+          "body" : "Your water is ready, kettle ${entityName} is turned off",
+          "enabled" : true,
+          "subject" : "kettle ${entityName} has boiled"
+        },
+        "MOBILE_APP" : {
+          "method" : "MOBILE_APP",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "mdi:kettle-steam",
+              "color" : "#FF9500"
+            },
+            "onClick" : null
+          },
+          "body" : "Your water is ready, ${deviceName} is turned off",
+          "enabled" : true,
+          "subject" : "kettle ${deviceName} has boiled"
+        }
+      },
+      "reportTemplateId" : null,
+      "timezone" : null,
+      "userId" : null
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "0b462940-7db7-11f0-89c5-3939d50337c0"
+    },
+    "name" : "Kettle boiled",
+    "notificationType" : "RULE_NODE"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : null,
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "clientConfiguration" : {
+        "port" : 10560,
+        "soBacklogOption" : 128,
+        "soRcvBuf" : 64,
+        "soSndBuf" : 64,
+        "soKeepaliveOption" : false,
+        "tcpNoDelay" : true,
+        "cacheSize" : 1000,
+        "timeToLiveInMinutes" : 1440,
+        "handlerConfiguration" : {
+          "handlerType" : "JSON",
+          "byteOrder" : "LITTLE_ENDIAN",
+          "maxFrameLength" : 128,
+          "lengthFieldOffset" : 0,
+          "lengthFieldLength" : 2,
+          "lengthAdjustment" : 0,
+          "initialBytesToStrip" : 0,
+          "failFast" : false,
+          "stripDelimiter" : true,
+          "messageSeparator" : "SYSTEM_LINE_SEPARATOR",
+          "customSeparatorRawValue" : null
+        }
+      }
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1759413599224,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "fcdcaef0-9f95-11f0-9289-6f201dc104bf"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "fd02ad80-9f95-11f0-9289-6f201dc104bf"
+    },
+    "name" : "TCP integration",
+    "remote" : true,
+    "routingKey" : "49880027-46a7-71b9-e622-e5cf8ea95ecb",
+    "secret" : "utldqezt3o2rk78yez9x",
+    "type" : "TCP"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "fd02ad80-9f95-11f0-9289-6f201dc104bf"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "b9a1e0f0-9f96-11f0-8c82-b38e8bd8f7b8"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 821804
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

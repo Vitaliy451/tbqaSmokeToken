@@ -1,0 +1,89 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "1e10d3c0-fdb2-11ef-af0a-ffb590a88a19"
+    },
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "04990f60-0f9c-11f0-aca7-331fa61fe5af"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "04990f60-0f9c-11f0-aca7-331fa61fe5af"
+    },
+    "image" : null,
+    "name" : "test",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "LWM2M",
+        "bootstrap" : [ {
+          "securityMode" : "NO_SEC",
+          "binding" : "U",
+          "bootstrapServerAccountTimeout" : 0,
+          "bootstrapServerIs" : false,
+          "clientHoldOffTime" : 1,
+          "defaultMinPeriod" : 1,
+          "host" : "0.0.0.0",
+          "lifetime" : 300,
+          "notifIfDisabled" : true,
+          "port" : 5685,
+          "serverCertificate" : null,
+          "serverPublicKey" : "",
+          "shortServerId" : 123
+        } ],
+        "bootstrapServerUpdateEnable" : false,
+        "clientLwM2mSettings" : {
+          "clientOnlyObserveAfterConnect" : 1,
+          "defaultObjectIDVer" : "1.0",
+          "edrxCycle" : 81000,
+          "fwUpdateResource" : null,
+          "fwUpdateStrategy" : 1,
+          "pagingTransmissionWindow" : 10000,
+          "powerMode" : "DRX",
+          "psmActivityTimer" : 10000,
+          "swUpdateResource" : null,
+          "swUpdateStrategy" : 1,
+          "useObject19ForOtaInfo" : null
+        },
+        "observeAttr" : {
+          "attribute" : [ "/10242_1.0/0/3", "/10_1.1/0/1" ],
+          "attributeLwm2m" : { },
+          "keyName" : {
+            "/10242_1.0/0/2" : "serialNumber",
+            "/10242_1.0/0/3" : "description",
+            "/10_1.1/0/1" : "disableRadioPeriod"
+          },
+          "observe" : [ ],
+          "observeStrategy" : "SINGLE",
+          "telemetry" : [ "/10242_1.0/0/2" ]
+        }
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "LWM2M",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

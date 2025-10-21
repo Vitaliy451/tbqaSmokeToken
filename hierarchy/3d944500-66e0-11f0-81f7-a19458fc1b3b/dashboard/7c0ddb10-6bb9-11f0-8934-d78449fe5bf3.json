@@ -1,0 +1,623 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "[Mobile QR code]",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "c74ad486-94d6-9c85-4683-a0ab80f2ff70" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1753627980922,
+                  "endTimeMs" : 1753714380922
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Take a screenshot",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "id" : "f2a9055b-f72d-6e1d-93e8-ececb0c57a20",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "mobileAction" : {
+                  "type" : "takeScreenshot",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Take screenshot action was cancelled!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to take screenshot', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "processImageFunction" : "// Function body to process image obtained as a result of mobile action (take photo, take image from gallery, etc.). \n// - imageUrl - image URL in base64 data format\n\nshowImageDialog('Screenshot', imageUrl);\n//saveEntityImageAttribute('image', imageUrl);\n\nfunction showImageDialog(title, imageUrl) {\n    setTimeout(function() {\n        widgetContext.customDialog.customDialog(imageDialogTemplate, ImageDialogController, {imageUrl: imageUrl, title: title}).subscribe();\n    }, 100);\n}\n\nfunction saveEntityImageAttribute(attributeName, imageUrl) {\n    if (entityId) {\n        let attributes = [{\n            key: attributeName, value: imageUrl\n        }];\n        widgetContext.attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributes).subscribe(\n           function() {\n               widgetContext.showSuccessToast('Image attribute saved!');\n           },\n           function(error) {\n               widgetContext.dialogs.alert('Image attribute save failed', JSON.stringify(error));\n           }\n        );\n    }\n}\n\nvar\n  imageDialogTemplate =\n    '<div aria-label=\"Image\">' +\n    '<form #theForm=\"ngForm\">' +\n    '<mat-toolbar class=\"flex flex-row\" color=\"primary\">' +\n    '<h2>{{title}}</h2>' +\n    '<span class=\"flex-1\"></span>' +\n    '<button mat-icon-button (click)=\"close()\">' +\n    '<mat-icon>close</mat-icon>' +\n    '</button>' +\n    '</mat-toolbar>' +\n    '<div mat-dialog-content>' +\n    '<div class=\"mat-content mat-padding\">' +\n    '<div class=\"flex flex-1 flex-col\">' +\n    '<div style=\"padding-top: 20px;\">' +\n    '<img [src]=\"imageUrl\" style=\"height: 300px;\"/>' +\n    '</div>' +\n    '</div>' +\n    '</div>' +\n    '</div>' +\n    '<div mat-dialog-actions class=\"flex flex-row\">' +\n    '<span class=\"flex-1\"></span>' +\n    '<button mat-button (click)=\"close()\" style=\"margin-right:20px;\">Close</button>' +\n    '</div>' +\n    '</form>' +\n    '</div>';\n\nfunction ImageDialogController(instance) {\n  let vm = instance;\n  vm.title = vm.data.title;\n  vm.imageUrl = vm.data.imageUrl;\n  vm.close = function ()\n  {\n    vm.dialogRef.close(null);\n  }\n}\n"
+                },
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "c74ad486-94d6-9c85-4683-a0ab80f2ff70"
+        },
+        "aa2dd6b4-5816-d18f-799c-7442dbcd6bd4" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1753628475005,
+                  "endTimeMs" : 1753714875005
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Take a photo",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "id" : "b0e641a5-d7c1-52a5-73e5-b407dcd4808e",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "mobileAction" : {
+                  "type" : "takePhoto",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Take photo action was cancelled!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to take photo', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "processImageFunction" : "// Function body to process image obtained as a result of mobile action (take photo, take image from gallery, etc.). \n// - imageUrl - image URL in base64 data format\n\nshowImageDialog('Photo', imageUrl);\n//saveEntityImageAttribute('image', imageUrl);\n\nfunction showImageDialog(title, imageUrl) {\n    setTimeout(function() {\n        widgetContext.customDialog.customDialog(imageDialogTemplate, ImageDialogController, {imageUrl: imageUrl, title: title}).subscribe();\n    }, 100);\n}\n\nfunction saveEntityImageAttribute(attributeName, imageUrl) {\n    if (entityId) {\n        let attributes = [{\n            key: attributeName, value: imageUrl\n        }];\n        widgetContext.attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributes).subscribe(\n           function() {\n               widgetContext.showSuccessToast('Image attribute saved!');\n           },\n           function(error) {\n               widgetContext.dialogs.alert('Image attribute save failed', JSON.stringify(error));\n           }\n        );\n    }\n}\n\nvar\n  imageDialogTemplate =\n    '<div aria-label=\"Image\">' +\n    '<form #theForm=\"ngForm\">' +\n    '<mat-toolbar class=\"flex flex-row\" color=\"primary\">' +\n    '<h2>{{title}}</h2>' +\n    '<span class=\"flex-1\"></span>' +\n    '<button mat-icon-button (click)=\"close()\">' +\n    '<mat-icon>close</mat-icon>' +\n    '</button>' +\n    '</mat-toolbar>' +\n    '<div mat-dialog-content>' +\n    '<div class=\"mat-content mat-padding\">' +\n    '<div class=\"flex flex-1 flex-col\">' +\n    '<div style=\"padding-top: 20px;\">' +\n    '<img [src]=\"imageUrl\" style=\"height: 300px;\"/>' +\n    '</div>' +\n    '</div>' +\n    '</div>' +\n    '</div>' +\n    '<div mat-dialog-actions class=\"flex flex-row\">' +\n    '<span class=\"flex-1\"></span>' +\n    '<button mat-button (click)=\"close()\" style=\"margin-right:20px;\">Close</button>' +\n    '</div>' +\n    '</form>' +\n    '</div>';\n\nfunction ImageDialogController(instance) {\n  let vm = instance;\n  vm.title = vm.data.title;\n  vm.imageUrl = vm.data.imageUrl;\n  vm.close = function ()\n  {\n    vm.dialogRef.close(null);\n  }\n}\n"
+                },
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "aa2dd6b4-5816-d18f-799c-7442dbcd6bd4"
+        },
+        "77c8154e-74eb-ad57-a7b8-2b3d67188d74" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1753628514875,
+                  "endTimeMs" : 1753714914875
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Scan a QR code",
+                "showIcon" : true,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "id" : "b2b2b50f-c39c-ff07-a635-b2ac679d5a90",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "mobileAction",
+                "mobileAction" : {
+                  "type" : "scanQrCode",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Scan QR code action was canceled!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to scan QR code', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "processQrCodeFunction" : "// Function body to process result of QR code scanning. \n// - code - scanned QR code\n// - format - scanned QR code format\n\nshowQrCodeDialog('QR Code', code, format);\n\nfunction showQrCodeDialog(title, code, format) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, 'Code: ['+code+']<br>Format: ' + format).subscribe();\n    }, 100);\n}\n"
+                },
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "77c8154e-74eb-ad57-a7b8-2b3d67188d74"
+        },
+        "3af28caf-6869-f321-3bf7-aa44e95e516b" : {
+          "typeFullFqn" : "system.mobile_app_qr_code",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 4,
+          "config" : {
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useSystemSettings" : true,
+              "qrCodeConfig" : {
+                "badgeEnabled" : true,
+                "badgePosition" : "RIGHT",
+                "qrCodeLabelEnabled" : true,
+                "qrCodeLabel" : "Scan to connect or download mobile app"
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Download mobile app",
+            "dropShadow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableFullscreen" : false,
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "configMode" : "basic",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "1.5"
+            },
+            "titleColor" : "#000000",
+            "iconSize" : "26px",
+            "titleIcon" : "qr_code",
+            "iconColor" : "#000000",
+            "actions" : { },
+            "enableDataExport" : false,
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "3af28caf-6869-f321-3bf7-aa44e95e516b"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "[Mobile QR code]",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "c74ad486-94d6-9c85-4683-a0ab80f2ff70" : {
+                  "sizeX" : 3,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 8
+                },
+                "aa2dd6b4-5816-d18f-799c-7442dbcd6bd4" : {
+                  "sizeX" : 3,
+                  "sizeY" : 1,
+                  "row" : 1,
+                  "col" : 8
+                },
+                "77c8154e-74eb-ad57-a7b8-2b3d67188d74" : {
+                  "sizeX" : 3,
+                  "sizeY" : 1,
+                  "row" : 2,
+                  "col" : 8
+                },
+                "3af28caf-6869-f321-3bf7-aa44e95e516b" : {
+                  "sizeX" : 7,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : { },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1751800955237,
+            "endTimeMs" : 1751887355237
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "name" : "[Mobile QR code]",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3d944500-66e0-11f0-81f7-a19458fc1b3b"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "7c0ddb10-6bb9-11f0-8934-d78449fe5bf3"
+    },
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3d944500-66e0-11f0-81f7-a19458fc1b3b"
+    }
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

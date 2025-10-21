@@ -1,0 +1,32 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "5yh",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : ""
+    },
+    "name" : "5yh",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "9c128eb0-79ec-11f0-89c5-3939d50337c0"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "af861c50-79ec-11f0-941a-43c3cfc33323"
+    },
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "9c128eb0-79ec-11f0-89c5-3939d50337c0"
+    }
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -12,7 +12,10 @@
       "entityType" : "CUSTOMER",
       "id" : "13814000-1dd2-11b2-8080-808080808080"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ASSET",
+      "id" : "56789ee0-ae8e-11f0-86d8-81e4c060fe10"
+    },
     "id" : {
       "entityType" : "ASSET",
       "id" : "56789ee0-ae8e-11f0-86d8-81e4c060fe10"
@@ -22,6 +25,7 @@
     "ownerId" : null,
     "type" : "supermarket"
   },
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   },

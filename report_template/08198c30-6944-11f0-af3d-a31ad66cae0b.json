@@ -1,0 +1,155 @@
+{
+  "entityType" : "REPORT_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "format" : "PDF",
+      "components" : [ {
+        "alignment" : "center",
+        "background" : null,
+        "borderColor" : null,
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "config" : {
+          "baseUrl" : "https://tbqa.cloud",
+          "dashboardId" : "477b31b0-16d0-11f0-b83b-3fb5a4ca1caf",
+          "namePattern" : null,
+          "state" : "",
+          "timewindow" : {
+            "selectedTab" : 1,
+            "history" : {
+              "historyType" : 0,
+              "interval" : 1000,
+              "timewindowMs" : 86400000
+            }
+          },
+          "timezone" : "Europe/Kiev",
+          "type" : "png",
+          "useCurrentUserCredentials" : false,
+          "useDashboardTimewindow" : true,
+          "userId" : null
+        },
+        "customWidth" : 100,
+        "dataSources" : [ {
+          "alarmFilterConfig" : null,
+          "dataKeys" : [ ],
+          "deviceId" : null,
+          "entityAliasId" : null,
+          "filterId" : null,
+          "latestDataKeys" : null,
+          "type" : "entity"
+        } ],
+        "margins" : null,
+        "paddings" : null,
+        "subType" : null,
+        "type" : "DASHBOARD",
+        "widthType" : "fitWidth"
+      } ],
+      "entityAliases" : [ ],
+      "filters" : [ ],
+      "footer" : {
+        "components" : [ {
+          "background" : null,
+          "borderColor" : null,
+          "borderRadius" : null,
+          "borderWidth" : null,
+          "dataSources" : [ {
+            "alarmFilterConfig" : {
+              "assigneeId" : null,
+              "searchPropagatedAlarms" : false,
+              "severityList" : null,
+              "statusList" : [ "ACTIVE" ],
+              "typeList" : null
+            },
+            "dataKeys" : [ {
+              "aggregationType" : null,
+              "color" : null,
+              "decimals" : null,
+              "label" : "temperature",
+              "name" : "temperature",
+              "postFuncBody" : null,
+              "settings" : {
+                "type" : "DEFAULT"
+              },
+              "timewindow" : null,
+              "type" : "timeseries",
+              "units" : null,
+              "usePostProcessing" : false
+            } ],
+            "deviceId" : "36d22320-21af-11f0-8a74-010f01303e07",
+            "entityAliasId" : null,
+            "filterId" : null,
+            "latestDataKeys" : null,
+            "type" : "device"
+          } ],
+          "margins" : null,
+          "paddings" : null,
+          "subType" : null,
+          "type" : "RICH_TEXT",
+          "value" : "<p style=\"line-height: 1.5;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero orci, faucibus in iaculis quis, vestibulum sit amet ligula. Nulla facilisi. Ut ut iaculis tortor.</p>"
+        } ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "format" : "PDF",
+      "header" : {
+        "components" : [ {
+          "background" : null,
+          "borderColor" : null,
+          "borderRadius" : null,
+          "borderWidth" : null,
+          "color" : "#000",
+          "dataSources" : [ ],
+          "font" : {
+            "family" : "Roboto",
+            "size" : 40.0,
+            "style" : "normal",
+            "weight" : "normal"
+          },
+          "height" : null,
+          "margins" : null,
+          "paddings" : null,
+          "subType" : null,
+          "textAlignment" : "center",
+          "type" : "HEADING",
+          "value" : "Heading",
+          "verticalAlignment" : "middle"
+        } ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
+      "pageBackground" : "#fff",
+      "pageMargins" : {
+        "bottom" : 20,
+        "left" : 20,
+        "right" : 20,
+        "top" : 20
+      },
+      "pageOrientation" : "PORTRAIT",
+      "pageSize" : "A4",
+      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "description" : "This is a test report",
+    "externalId" : null,
+    "format" : "PDF",
+    "id" : {
+      "entityType" : "REPORT_TEMPLATE",
+      "id" : "08198c30-6944-11f0-af3d-a31ad66cae0b"
+    },
+    "name" : "Report test",
+    "ownerId" : null,
+    "type" : "REPORT"
+  }
+}

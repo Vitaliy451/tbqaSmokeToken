@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "smoke_test",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "16299210-51bc-11f0-b434-cdec2740e45c"
+    },
+    "image" : "tb-image;/api/images/tenant/photo-gallery-icon.png",
+    "name" : "smoke test",
+    "order" : null,
+    "scada" : false,
+    "title" : "smoke test"
+  },
+  "fqns" : [ ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

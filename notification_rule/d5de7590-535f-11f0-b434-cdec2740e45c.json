@@ -1,0 +1,31 @@
+{
+  "entityType" : "NOTIFICATION_RULE",
+  "entity" : {
+    "additionalConfig" : {
+      "description" : "test"
+    },
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "d5de7590-535f-11f0-b434-cdec2740e45c"
+    },
+    "name" : "Test rule",
+    "recipientsConfig" : {
+      "targets" : [ "76be58f0-535f-11f0-86e5-f1b3d2296ca6", "144d45c0-fdae-11ef-bca0-9d823f5ae12e", "144c3450-fdae-11ef-bca0-9d823f5ae12e" ],
+      "triggerType" : "DEVICE_ACTIVITY"
+    },
+    "templateId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "a153d630-535f-11f0-b434-cdec2740e45c"
+    },
+    "triggerConfig" : {
+      "triggerType" : "DEVICE_ACTIVITY",
+      "deviceProfiles" : null,
+      "devices" : [ "36d22320-21af-11f0-8a74-010f01303e07" ],
+      "notifyOn" : [ "ACTIVE" ],
+      "triggerType" : "DEVICE_ACTIVITY"
+    },
+    "triggerType" : "DEVICE_ACTIVITY"
+  }
+}
