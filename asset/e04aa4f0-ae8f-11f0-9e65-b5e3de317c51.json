@@ -6,13 +6,16 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "1440c2a0-fdae-11ef-bca0-9d823f5ae12e"
+      "id" : "32c07260-a38b-11f0-8c82-b38e8bd8f7b8"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
       "id" : "13814000-1dd2-11b2-8080-808080808080"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ASSET",
+      "id" : "e04aa4f0-ae8f-11f0-9e65-b5e3de317c51"
+    },
     "id" : {
       "entityType" : "ASSET",
       "id" : "e04aa4f0-ae8f-11f0-9e65-b5e3de317c51"
@@ -20,7 +23,7 @@
     "label" : null,
     "name" : "AssetDelete",
     "ownerId" : null,
-    "type" : "default"
+    "type" : "مرحباً كيف حالك؟"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ ]
