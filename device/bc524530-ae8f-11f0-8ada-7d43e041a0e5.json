@@ -20,9 +20,12 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "143e78b0-fdae-11ef-bca0-9d823f5ae12e"
+      "id" : "00331730-7dbb-11f0-89c5-3939d50337c0"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "bc524530-ae8f-11f0-8ada-7d43e041a0e5"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -32,7 +35,7 @@
     "name" : "DeleteThisDevice",
     "ownerId" : null,
     "softwareId" : null,
-    "type" : "default"
+    "type" : "kettle"
   },
   "credentials" : {
     "credentialsId" : "8ZQU4Zy68MsJ6lpCk5Db",
@@ -40,7 +43,15 @@
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1761059391024,
+      "longValue" : null,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   },
   "calculatedFields" : [ ]
