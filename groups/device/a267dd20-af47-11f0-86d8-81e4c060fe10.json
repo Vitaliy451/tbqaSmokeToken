@@ -42,5 +42,18 @@
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   },
-  "groupEntities" : false
+  "groupEntities" : false,
+  "groupOtaPackages" : [ {
+    "groupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "a267dd20-af47-11f0-86d8-81e4c060fe10"
+    },
+    "id" : "eeab2de0-af47-11f0-9e65-b5e3de317c51",
+    "otaPackageId" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "f2fb8720-af45-11f0-9e65-b5e3de317c51"
+    },
+    "otaPackageType" : "FIRMWARE",
+    "otaPackageUpdateTime" : 1761138393006
+  } ]
 }
