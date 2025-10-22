@@ -55,5 +55,17 @@
     },
     "otaPackageType" : "SOFTWARE",
     "otaPackageUpdateTime" : 1761138418592
+  }, {
+    "groupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "9d4096c0-af47-11f0-9e65-b5e3de317c51"
+    },
+    "id" : "8e64c770-af4c-11f0-8ada-7d43e041a0e5",
+    "otaPackageId" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "f2fb8720-af45-11f0-9e65-b5e3de317c51"
+    },
+    "otaPackageType" : "FIRMWARE",
+    "otaPackageUpdateTime" : 1761140378969
   } ]
 }
