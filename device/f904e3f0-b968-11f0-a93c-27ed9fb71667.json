@@ -23,7 +23,10 @@
       "id" : "ec518c30-b968-11f0-a93c-27ed9fb71667"
     },
     "externalId" : null,
-    "firmwareId" : null,
+    "firmwareId" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "54208f50-b969-11f0-a93c-27ed9fb71667"
+    },
     "id" : {
       "entityType" : "DEVICE",
       "id" : "f904e3f0-b968-11f0-a93c-27ed9fb71667"
@@ -48,6 +51,14 @@
       "lastUpdateTs" : 1762252095501,
       "longValue" : null,
       "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fw_id",
+      "lastUpdateTs" : 1762252293025,
+      "longValue" : null,
+      "strValue" : "54208f50-b969-11f0-a93c-27ed9fb71667"
     } ],
     "SHARED_SCOPE" : [ ]
   },
