@@ -20,7 +20,7 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "143e78b0-fdae-11ef-bca0-9d823f5ae12e"
+      "id" : "dd3b3bc0-adc3-11f0-86d8-81e4c060fe10"
     },
     "externalId" : null,
     "firmwareId" : null,
@@ -32,7 +32,7 @@
     "name" : "new",
     "ownerId" : null,
     "softwareId" : null,
-    "type" : "default"
+    "type" : "Alarm profiel"
   },
   "credentials" : {
     "credentialsId" : "5eIADC4MOsBFGd2LeZzR",
@@ -40,7 +40,31 @@
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1761223213555,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1761223213549,
+      "longValue" : 1761223213549,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1761222615849,
+      "longValue" : 1761222613531,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   },
   "calculatedFields" : [ ]
