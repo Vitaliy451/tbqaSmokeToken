@@ -28,8 +28,8 @@
     "title" : "vradchuk+40@thingsboard.io",
     "zip" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  }
+  },
+  "calculatedFields" : [ ]
 }
